@@ -1,18 +1,10 @@
 from flask import Flask, request, jsonify
 import json
-import logging
 # noinspection PyPackageRequirements
 from werkzeug.exceptions import HTTPException
 
 app = Flask(__name__, static_url_path='', static_folder='')
 app.config["DEBUG"] = False
-unexpected_error_msg = "UNEXPECTED ERROR"
-unexpected_error_code = 599
-
-# logging.basicConfig(filename='log_file_full_path',
-#                    format='%(asctime)s - %(levelname)s - %(message)s',
-#                    level=logging.INFO)
-# logging.info("App Service STARTED")
 
 
 def get_dummy_response():
