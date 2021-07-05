@@ -4,7 +4,7 @@ import json
 from werkzeug.exceptions import HTTPException
 
 app = Flask(__name__, static_url_path='', static_folder='')
-app.config["DEBUG"] = False
+app.config["DEBUG"] = True
 
 
 def get_dummy_response():
